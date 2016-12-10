@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<hgroup class="title">
+    <h1>About</h1>
+    <h2>This site is the about site that used to describe the mvc web page.</h2>
+</hgroup>
+
+<article>
+    <p>
+        <img src="~/Images/mainlogo.jpeg" />
+    </p>
+
+    <p>
+        There are three tables in database: Company, Game and Players. Each game has a publisher(company),
+        whenever users try to add or edit an game record, They need to choose a company from a dropdown list.
+        Table Player has the same setting as well.
+    </p>
+
+    <p>
+        Sorting for all those three tables are available, user can choose to sort records by any attribute in the table.
+    </p>
+</article>
+
+<aside>
+    <p>
+        Quick Links:
+    </p>
+    <ul>
+        <li>@Html.ActionLink("About", "Index", "Home")</li>
+        <li>@Html.ActionLink("Document", "Contact", "Home")</li>
+        <li>@Html.ActionLink("Company", "Index", "Company")</li>
+        <li>@Html.ActionLink("Game", "Index", "Game")</li>
+        <li>@Html.ActionLink("Player", "Index", "Player")</li>
+    </ul>
+</aside>

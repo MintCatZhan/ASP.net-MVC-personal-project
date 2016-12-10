@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+        @Scripts.Render("~/bundles/modernizr")
+        @Scripts.Render("~/Scripts/jquery.dataTables.js")
+        @Scripts.Render("~/bundles/jqueryui")
+    </head>
+    <body>
+        <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title">@Html.ActionLink("HD part Assignment", "About", "Home")</p>
+                    
+                </div>
+                <div class="float-right">
+                    <nav>
+                        <ul id="menu">
+                            <li>@Html.ActionLink("About", "Index", "Home")</li>
+                            <li>@Html.ActionLink("Document", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("Company", "Index", "Company")</li>
+                            <li>@Html.ActionLink("Game", "Index", "Game")</li>
+                            <li>@Html.ActionLink("Player", "Index", "Player")</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; @DateTime.Now.Year - Yuan Zhan</p>
+                </div>
+            </div>
+        </footer>
+
+        
+    </body>
+</html>

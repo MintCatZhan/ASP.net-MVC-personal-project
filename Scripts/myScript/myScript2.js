@@ -1,0 +1,3 @@
+﻿$(function () {
+    $("#yearPub").datepicker();
+});

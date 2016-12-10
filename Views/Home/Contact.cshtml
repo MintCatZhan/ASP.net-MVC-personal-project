@@ -1,0 +1,108 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+@Scripts.Render("~/Scripts/myScript/HideAndShow.js")
+@Scripts.Render("~/Scripts/myScript/fade.js")
+@Scripts.Render("~/Scripts/myScript/slide.js")
+
+<hgroup class="title">
+    <h1>Document</h1>
+</hgroup>
+<div id="flip">
+    <h4>Documents for assignment</h4>
+</div>
+<div id="panel" style="display:none">
+    <ul>
+        <li>Name: Yuan Zhan</li>
+        <li>Student ID: 26693267</li>
+        <li>Unit Name: Internet Applicaiton Development</li>
+        <li>Unit Provider: Monash University, The Caulfield School of Information Technology</li>
+        <li>Assignment Number: Credit part</li>
+        <li>Data of submission: 28 Aug 2016</li>
+        <li>Tutor Name: Linh Chu</li>
+        <li>
+            <a href="http://moodle.vle.monash.edu/mod/page/view.php?id=3321999">Assignment specification</a>
+        </li>
+        <li>
+            <a href="mailto:linh.chu@monash.edu">Linh Chu</a>
+        </li>
+        <li>
+            <h4>jQuery functionality contained</h4>
+            <button id="fadeBtn">Fade</button>
+            <div id="fadePart" style="display:none">
+                <ul>
+                    <li>
+                        Sorting: user can sort record by any attribute of each table
+                    </li>
+                    <li>
+                        CRUD: user can create, read, update and delete records in each table
+                    </li>
+                    <li>
+                        Row highlighting: rows will be highlighted once mouse over or out them
+                    </li>
+                    <li>
+                        Alternating row colouring: different rows have different colours
+                    </li>
+                    <li>
+                        Date-picker for entering dates(Edit, Create pages for Game)
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li>
+            All those three pages used "Row Highlighting", "Alternating Row colouring" jQuery funcitonalities. The "create" and "edit" pages of "Game" also used "Date-pick for entering dates" as well.
+            <ul id="fction">
+                <li>
+                    <h5>Pages:</h5>&nbsp;
+                </li>
+                <li>
+                    <a href="~/Views/Company/Index.cshtml">Company</a>;
+                </li>
+                <li>
+                    <a href="~/Views/Game/Index.cshtml">Game</a>;
+                </li>
+                <li>
+                    <a href="~/Views/Player/Index.cshtml">Player</a>;
+                </li>
+            </ul>
+            <button id="hide">Hide</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="show">Show</button>
+        </li>
+        
+        <li>
+            <h4>
+                Advanced fucntionality
+            </h4>
+        </li>
+        <li>
+            "Fade"; "show & hide"; "slide" functions used in this page
+        </li>
+        <li>
+            "Fade": the "jQuery functionality contained" in this page will be faded to disappear by clicking the "Fade" button
+        </li>
+        <li>
+            "show & hide": the links of pages which have used jQuery functions will be shown by clicking "Show" button. The content may also be hided.
+        </li>
+        <li>
+            "Slide": all contents will be disappeared in "sliding" style by click the sentence "Documents for assignment"
+        </li>
+    </ul>
+    <br /><br /><br />
+
+
+    <table>
+        <tr>
+            <td>
+                Picture used in this project
+            </td>
+            <td>
+                <img src="~/Images/mainlogo.jpeg" />
+            </td>
+            <td>
+                Copyright: this is a picture created by a Overwatch player,
+                and uploaded it to the Weibo(a chinese social media)
+                which is allowed to be used for personal sharing.
+            </td>
+        </tr>
+    </table>
+</div>
